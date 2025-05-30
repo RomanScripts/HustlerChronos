@@ -1,4 +1,4 @@
 # HustlerChronos
 Stopwatch, timer and pomodoro based only on hotkeys with no gui buttons. Unique tool for productivity.
 
-![Image](https://github.com/user-attachments/assets/1d02a75f-2428-42d8-a55a-2a687e3d1517)
+![Image](https://github.com/user-attachments/assets/313580a2-18bc-489e-8c54-e15f3061b9e6)
