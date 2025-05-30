@@ -1,0 +1,17 @@
+{
+    "hideDuration": 2,
+    "position": "bottom_left",
+    "font_size": 14,
+    "tick_sound": "off",
+    "use_ticks_in": "timer",
+    "tick_interval": "per minute",
+    "alarm_sound": "C:\\Windows\\Media\\Alarm01.wav",
+    "alarm_duration": 30,
+    "enable_symbols": true,
+    "font": "Open Sans",
+    "infinite_mode": false,
+    "custom_pomodoro": "5 5 25",
+    "custom_pomodoro_cycles": 8,
+    "final_pomodoro_sound": "C:\\Windows\\Media\\tada.wav",
+    "final_alarm_duration": 60
+}
