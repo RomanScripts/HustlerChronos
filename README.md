@@ -1,4 +1,5 @@
 # HustlerChronos
+![hustlerChronos](https://github.com/user-attachments/assets/16ad28b8-e07c-46c5-9308-5245f3ee6759)
 
 **Stopwatch, timer, and Pomodoro based on hotkeys, with no GUI buttons. A unique tool for productivity.**
 
@@ -51,6 +52,7 @@ Shift + CapsLock + Q       → Pause stopwatch
 Shift + CapsLock + Z       → Pause Pomodoro  
 
 
+![hotkeyMaket_MAIN_2025-05-31_03 41 30](https://github.com/user-attachments/assets/7c500abb-24af-42e2-885a-dedf904c16cd)
 
 ---
 
