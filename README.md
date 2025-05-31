@@ -57,7 +57,8 @@ Shift + CapsLock + Q       → Pause stopwatch
 Shift + CapsLock + Z       → Pause Pomodoro  
 
 
-![hotkeyMaket_MAIN_2025-05-31_19 01 22](https://github.com/user-attachments/assets/167f160e-0755-4240-97d8-40668ca99006)
+
+![hotkeyMaket_MAIN_2025-05-31_19 04 10](https://github.com/user-attachments/assets/faffdfa7-eba0-405e-81d9-a242cfa61c9b)
 
 
 
