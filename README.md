@@ -25,6 +25,11 @@ If you want to use the **non-compiled** version:
    ```bash
    pip install pygame screeninfo
 
+---
+
+
+## 🎮 Hotkeys:
+
 CapsLock + Q       → Start stopwatch  
 CapsLock + W       → Resume stopwatch  
 
