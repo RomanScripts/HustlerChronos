@@ -1,11 +1,19 @@
 # HustlerChronos
-Stopwatch, timer and pomodoro based on hotkeys with no gui buttons. Unique tool for productivity.
+
 
 ![Image](https://github.com/user-attachments/assets/313580a2-18bc-489e-8c54-e15f3061b9e6)
 
+Stopwatch, timer and pomodoro based on hotkeys with no gui buttons. Unique tool for productivity.  
 
-![hotkeyMaket_MAIN_2025-05-31_03 41 30](https://github.com/user-attachments/assets/b3e32926-038a-4733-b1f4-0e02f9d82557)
-
+To download ready to use (compiled) version, go to releases, download all files and start HustlerChronos.exe.  
+  
+If you want to use non-compiled version: 
+1. Install Autohotkey v2  
+2. Install Python  
+3. Install python modules: pygame, screeninfo.  
+  
+And thats should be it.  
+  
 # Hotkeys:
 
 CapsLock + Q &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    start stopwatch  
@@ -34,16 +42,9 @@ Shift + CapsLock + 1 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   pause timer
 Shift + CapsLock + Q &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   pause stopwatch  
 Shift + CapsLock + Z &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   pause pomodoro  
   
+![hotkeyMaket_MAIN_2025-05-31_03 41 30](https://github.com/user-attachments/assets/b3e32926-038a-4733-b1f4-0e02f9d82557)  
   
-  
-To download ready to use (compiled) version, go to releases, download all files and start HustlerChronos.exe.  
-  
-If you want to use non-compiled version: 
-1. Install Autohotkey v2
-2. Install Python
-3. Install python modules: pygame, screeninfo.
-  
-And thats should be it.
+
   
 Support project and developer:  
 DONATE
