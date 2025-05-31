@@ -9,7 +9,7 @@
 
 To download the **ready-to-use (compiled)** version:
 
-1. Go to the [**Releases**](https://github.com/yourusername/yourrepo/releases) section  
+1. Go to the [**Releases**](https://github.com/RomanScripts/HustlerChronos/releases) section  
 2. Download **all files**  
 3. Run `HustlerChronos.exe`
 
