@@ -25,6 +25,9 @@ If you want to use the **non-compiled** version:
    ```bash
    pip install pygame screeninfo
 
+
+![Screenshot_708](https://github.com/user-attachments/assets/b2683745-9337-4028-82a8-8aed6d774cae)
+
 ---
 
 
