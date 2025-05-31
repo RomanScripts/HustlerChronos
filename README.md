@@ -12,16 +12,16 @@ CapsLock + Q     start stopwatch
 CapsLock + W     resume stopwatch  
   
   
-CapsLock + 1     start 1 minute timer  
-CapsLock + 2     start 3 minutes timer  
-CapsLock + 3     start 5 minutes timer  
-CapsLock + 4     start 10 minutes timer  
-CapsLock + 5     start 20 minutes timer  
-CapsLock + 6     start 30 minutes timer  
-CapsLock + 7     start 45 minutes timer  
-CapsLock + 8     start 60 minutes timer  
-CapsLock + 9     start 90 minutes timer  
-CapsLock + 0     start 120 minutes timer  
+CapsLock + 1 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; start 1 minute timer  
+CapsLock + 2 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     start 3 minutes timer  
+CapsLock + 3 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    start 5 minutes timer  
+CapsLock + 4 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    start 10 minutes timer  
+CapsLock + 5 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    start 20 minutes timer  
+CapsLock + 6 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    start 30 minutes timer  
+CapsLock + 7 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    start 45 minutes timer  
+CapsLock + 8 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    start 60 minutes timer  
+CapsLock + 9 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    start 90 minutes timer  
+CapsLock + 0 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    start 120 minutes timer  
 
 
 
