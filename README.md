@@ -36,14 +36,14 @@ Shift + CapsLock + Z &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   pause pomodoro
   
   
   
-To use standalone compiled version go to releases, download all files and start HustlerChronos.exe.  
+To download ready to use (compiled) version, go to releases, download all files and start HustlerChronos.exe.  
   
 If you want to use non-compiled version: 
-1. Just install Autohotkey v2
+1. Install Autohotkey v2
 2. Install Python
 3. Install python modules: pygame, screeninfo.
   
 And thats should be it.
   
-Support project and developer:
+Support project and developer:  
 DONATE
