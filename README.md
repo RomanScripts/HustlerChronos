@@ -64,7 +64,8 @@ Shift + CapsLock + Z       → Pause Pomodoro
 
 
 
-![hotkeyMaket_MAIN_2025-05-31_19 04 10](https://github.com/user-attachments/assets/faffdfa7-eba0-405e-81d9-a242cfa61c9b)
+
+![hotkeyMaket_MAIN_timer___GithubPicture_2025-06-28_13 39 59](https://github.com/user-attachments/assets/1b2ef760-d0cc-4c32-bd40-afa7f6f6b1b7)
 
 
 
