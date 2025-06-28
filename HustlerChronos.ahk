@@ -1,4 +1,4 @@
-﻿#NoEnv
+#NoEnv
 #SingleInstance, Force
 #InstallKeybdHook
 #Persistent
@@ -20,7 +20,6 @@ global pomodoroPIDFile := tempFolderPath . "\pomodoroPID.txt"
 global optionsPIDFile := tempFolderPath . "\optionsPID.txt"
 
 createAllTemp()
-
 
 
 
@@ -56,9 +55,28 @@ RunStopwatch(argument=True) {
         }
     }
     argument := "stopwatch " . argument 
-    pathToStopwatch := A_ScriptDir . "\python\main.dist\main.exe" 
-    Run, %pathToStopwatch% %argument%,, hide, stopwatchPID
-    ; Run, cmd /k %pathToStopwatch% %argument%,,, stopwatchPID
+    pathToExe := A_ScriptDir . "\python\HustlerChronos.dist\HustlerChronos.exe" 
+    pathToPython := A_ScriptDir . "\python\HustlerChronos.py" 
+
+    ; Run, %pathToStopwatch% %argument%,, hide, stopwatchPID
+    ; pathToStopwatch := A_ScriptDir . "\python\stopwatch.py" 
+    ; Run, python.exe cmd /k %pathToStopwatch% %argument%,,, stopwatchPID
+    
+
+    if FileExist(pathToExe) {
+        Run, %pathToExe% %argument% ,,hide, stopwatchPID
+    } else if FileExist(pathToPython) {
+            RunWait, python --version,, Hide, ErrorLevel
+    
+    if (ErrorLevel = 0) {
+        Run, python.exe %pathToPython% %argument% ,,hide, stopwatchPID
+    } else {
+        MsgBox, 16, "Error, Python not found. Install Python or use compiled version."
+    }
+    } else {
+       MsgBox, 16, "Error: Neither the EXE file nor the Python script was found"
+    }
+
 
     rewriteFile(stopwatchPIDFile,stopwatchPID)
 }
@@ -126,17 +144,30 @@ RunTimer(time) {
 			return ; удалить ретурн если хочешь, чтобы таймер закрывался только той же кнопкой которой запускался, в других случаях переоткрывался новый
         }
     }
-    time := "timer " . time
-    pathToStopwatch := A_ScriptDir . "\python\main.dist\main.exe" 
-    processTimerArgument := time
-    Run, %pathToStopwatch% %time%,, hide, timerPID
+    argument := "timer " . time
+    pathToExe := A_ScriptDir . "\python\HustlerChronos.dist\HustlerChronos.exe" 
+    pathToPython := A_ScriptDir . "\python\HustlerChronos.py" 
+    ; Run, %pathToStopwatch% %time%,, hide, timerPID
     ; Run, cmd /k %pathToStopwatch% %time%,, , timerPID
+
+    if FileExist(pathToExe) {
+        Run, %pathToExe% %argument% ,,hide, timerPID
+    } else if FileExist(pathToPython) {
+            RunWait, python --version,, Hide, ErrorLevel
+    
+    if (ErrorLevel = 0) {
+        Run, python.exe %pathToPython% %argument% ,,hide, timerPID
+    } else {
+        MsgBox, 16, "Error, Python not found. Install Python or use compiled version."
+    }
+    } else {
+       MsgBox, 16, "Error: Neither the EXE file nor the Python script was found"
+    }
     
 	rewriteFile(timerPIDFile,timerPID)
 }
 
-; Capslock & Ё::RunTimerMain(1)
-; Capslock & `::RunTimerMain(1)
+
 Capslock & 1::RunTimer(1)
 Capslock & 2::RunTimer(3)
 Capslock & 3::RunTimer(5)
@@ -179,17 +210,31 @@ RunPomodoro(args*){
             return
         }
     }
-    strList := "pomodoro " . strList
-    pathToStopwatch := A_ScriptDir . "\python\main.dist\main.exe" 
-    Run, %pathToStopwatch% %strList% ,,hide, pomodoroPID
-
+    argument := "pomodoro " . strList
+    pathToExe := A_ScriptDir . "\python\HustlerChronos.dist\HustlerChronos.exe" 
+    pathToPython := A_ScriptDir . "\python\HustlerChronos.py" 
+    if FileExist(pathToExe) {
+        Run, %pathToExe% %argument% ,,hide, pomodoroPID
+    
+    } else if FileExist(pathToPython) {
+            RunWait, python --version,, Hide, ErrorLevel
+    
+    if (ErrorLevel = 0) {
+        Run, python.exe %pathToPython% %argument% ,,hide, pomodoroPID
+    } else {
+        MsgBox, 16, "Error, Python not found. Install Python or use compiled version."
+    }
+    } else {
+       MsgBox, 16, "Error: Neither the EXE file nor the Python script was found"
+    }
+    
     rewriteFile(pomodoroPIDFile,pomodoroPID)
 }
 
 
 Capslock & z::RunPomodoro(true,5,1)
 Capslock & x::RunPomodoro(true,25,5)
-Capslock & c::RunPomodoro(false,5,5,25,5)
+Capslock & c::RunPomodoro(true,55,5)
 Capslock & v::RunPomodoro("custom")
 
 
@@ -217,8 +262,24 @@ if (optionsPID) {
 		return
 	}
 }
-pathToOptions := A_ScriptDir . "\python\main.dist\main.exe" 
-Run, %pathToOptions% "options",, hide,optionsPID
+pathToExe := A_ScriptDir . "\python\HustlerChronos.dist\HustlerChronos.exe" 
+pathToPython := A_ScriptDir . "\python\HustlerChronos.py" 
+; Run, %pathToOptions% "options",, hide,optionsPID
+
+    if FileExist(pathToExe) {
+        Run, %pathToExe% "options" ,,hide, optionsPID
+    
+    } else if FileExist(pathToPython) {
+            RunWait, python --version,, Hide, ErrorLevel
+    
+    if (ErrorLevel = 0) {
+        Run, python.exe %pathToPython% "options" ,,hide, optionsPID
+    } else {
+        MsgBox, 16, "Error, Python not found. Install Python or use compiled version."
+    }
+    } else {
+       MsgBox, 16, "Error: Neither the EXE file nor the Python script was found"
+    }
 
 rewriteFile(optionsPIDFile, optionsPID)
 return
