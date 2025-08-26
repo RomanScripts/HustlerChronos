@@ -23,7 +23,7 @@ If you want to use the **non-compiled** version:
 2. Install [**Python**](https://www.python.org/)
 3. Install the required Python modules:
    ```bash
-   pip install pygame screeninfo psutil
+   pip install pygame screeninfo psutil Pillow
 
 
 
